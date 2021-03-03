@@ -1,0 +1,28 @@
+footer{
+  text-align: center;
+
+  display: block;
+  justify-self: end;
+  height: 100%;
+
+  color: $color__light;
+  background-color: $color__darker;
+
+  img {
+    width: 10%;
+  }
+
+  #contact {
+    padding-left: 20px;
+    ul {
+      text-align: left;
+      list-style-type: none;
+    }
+    h3 {
+      padding: 20px 0;
+    }
+    h4 {
+      text-align: left;
+    }
+  }
+}

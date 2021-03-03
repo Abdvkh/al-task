@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #E5E5E5;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #222222;
+}
+
+.brand {
+  font-family: "Inter", serif;
+  text-decoration: none;
+  font-weight: initial;
+}
+
+section {
+  text-align: center;
+}
+
+.heading {
+  font-size: 3em;
+}
+
+.lead {
+  font-size: 1.8em;
+}
+
+footer {
+  font-size: 1.125em;
+  text-align: left;
+}
+footer h3 {
+  font-size: 2em;
+}
+footer h4 {
+  font-size: 1.5em;
+}
+
+.grid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+footer {
+  text-align: center;
+  display: block;
+  justify-self: end;
+  height: 100%;
+  color: #F0F0F0;
+  background-color: #222222;
+}
+footer img {
+  width: 10%;
+}
+footer #contact {
+  padding-left: 20px;
+}
+footer #contact ul {
+  text-align: left;
+  list-style-type: none;
+}
+footer #contact h3 {
+  padding: 20px 0;
+}
+footer #contact h4 {
+  text-align: left;
+}
+
+nav {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 20px 10px;
+}
+nav .nav {
+  width: 375px;
+  height: 400px;
+  display: none;
+}
+nav .show {
+  display: contents;
+  background-color: #F0F0F0;
+}
+nav ul {
+  grid-column: 1/12;
+  line-height: 2;
+  display: grid;
+  padding-left: 30px;
+}
+nav li {
+  grid-column: 1/12;
+  list-style: none;
+}
+nav li a {
+  float: left;
+  display: block;
+  color: #222222;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav li a:hover, nav li a .active {
+  text-decoration: underline;
+}
+@media screen and (max-width: 920px) {
+  nav li a:not(:first-child) {
+    display: none;
+  }
+}
+nav h1 {
+  grid-column: 2/10;
+}
+nav img {
+  margin: 15px 0;
+  grid-column: 11/12;
+  width: 80%;
+  cursor: pointer;
+}
+@media screen and (min-width: 920px) {
+  nav img {
+    display: none;
+  }
+}
+nav button {
+  margin: 0 auto;
+  grid-column: 2/4;
+}
+
+@media screen and (min-width: 920px) {
+  nav {
+    display: inline;
+    position: sticky;
+    float: left;
+    top: 0;
+    left: 2%;
+    width: 25%;
+  }
+  nav ul {
+    margin-top: 40vh;
+    padding-left: 0;
+  }
+  nav .nav {
+    display: contents;
+  }
+  nav button {
+    margin: 0;
+  }
+}
+.btn {
+  text-transform: uppercase;
+  height: 50px;
+  width: 200px;
+  border: 0;
+  color: #F0F0F0;
+  font-size: larger;
+  grid-column: 4/10;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #222222;
+}
+
+/*# sourceMappingURL=main.css.map */
