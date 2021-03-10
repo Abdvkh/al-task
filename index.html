@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>AGAIN / FASTER</title>
     <link rel="stylesheet" href="styles/sass/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 </head>
 <body>
     <section id="discount">
-        <p>20% off sitewide until 9/12</p>
+        <p class="discount">20% off sitewide until 9/12</p>
     </section>
-    <header>
+    <nav>
         <h1 class="brand-name">AGAIN / FASTER</h1>
         <ul class="nav-links">
             <li>lorem</li>
@@ -19,60 +21,73 @@
             <li>rephenhenderit</li>
         </ul>
         <ul class="actions">
-            <li><i class="search"></i></li>
-            <li><i class="profile"></i></li>
-            <li><i class="cart"></i></li>
+            <li><img class="icon" src="images/search.jpg" alt=""></li>
+            <li><img class="icon" src="images/profile.jpg" alt=""></li>
+            <li><img class="icon" src="images/cart.jpg" alt=""></li>
         </ul>
-    </header>
+    </nav>
     <main>
-        <section class="image-slider">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </section>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/20lb.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="images/40lb.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="images/woman.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="images/man.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="images/video.jpg" alt="" /></li>
+                </ul>
+            </div>
+        </div>
         <section class="details">
             <h2 class="title">dumbbell singles</h2>
             <small class="price">$4.00</small>
-            <img src="" alt="" class="stars"><small>18 reviews</small>
-            <img src="" alt="" class="affirm-logo"><small>pay as low as 56/mo Learn more</small>
+            <div class="reviews">
+                <img src="images/stars.jpg" alt="" class="stars">
+                <small>18 reviews</small>
+            </div>
+            <div class="installment">
+                <img src="images/affirm.jpg" alt="" class="affirm-logo">
+                <small>pay as low as 56/mo Learn more</small>
+            </div>
             <p class="description">Again Faster Dumbbells offer the ability to target specific muscle groups or attain a full body workout. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantum doloremque laudantium, totam rem aperiam.</p>
             <ul class="types">
                 <li class="type">10lb Single</li>
                 <li class="type">20lb Single</li>
-                <li class="type">30lb Single</li>
-                <li class="type">40lb Single</li>
+                <li class="type stock-out">30lb Single</li>
+                <li class="type stock-out">40lb Single</li>
                 <li class="type">50lb Single</li>
-                <li class="type">60lb Single</li>
+                <li class="type active">60lb Single</li>
                 <li class="type">70lb Single</li>
                 <li class="type">80lb Single</li>
-                <li class="type">90lb Single</li>
+                <li class="type stock-out">90lb Single</li>
                 <li class="type">100lb Single</li>
             </ul>
-            <small><i>Available Free shipping!</i></small>
+            <small class="shipping">Available for Free shipping!</small>
             <button>add to cart</button>
             <hr>
             <section class="frequently-bought-with">
                 <h3>frequently bought with</h3>
                 <ul>
                     <li>
-                        <section class="product">
-                            <img src="" alt="">
+                        <img src="images/product.jpg" alt="">
+                        <div class="description">
                             <h4>Product name</h4>
                             <a href="">add to cart</a>
-                        </section>
+                        </div>
                     </li>
                     <li>
-                        <section class="product">
-                            <img src="" alt="">
+                        <img src="images/product.jpg" alt="">
+                        <div class="description">
                             <h4>Product name</h4>
                             <a href="">add to cart</a>
-                        </section>
+                        </div>
                     </li>
                 </ul>
             </section>
         </section>
     </main>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 </body>
 </html>

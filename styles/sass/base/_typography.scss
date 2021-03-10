@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jost:wght@500&family=Open+Sans+Condensed:wght@300&family=Open+Sans&display=swap');
 
 body {
   font-family: 'Inter', sans-serif;
   color: $color__darker;
 }
 
-.brand {
-  font-family: 'Inter', serif;
-  text-decoration: none;
-  font-weight: initial;
+.discount {
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.brand-name {
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+    font-weight: initial;
 }
 
 section {

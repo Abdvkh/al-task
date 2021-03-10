@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Jost:wght@500&family=Open+Sans+Condensed:wght@300&family=Open+Sans&display=swap");
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #F1f1f1;
   color: #333333;
   box-sizing: border-box;
+  letter-spacing: 0.1em;
 }
 
 * {
@@ -19,8 +20,14 @@ body {
   color: #222222;
 }
 
-.brand {
-  font-family: "Inter", serif;
+.discount {
+  font-family: "Open Sans Condensed", sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.brand-name {
+  font-family: "Jost", sans-serif;
   text-decoration: none;
   font-weight: initial;
 }
@@ -48,130 +55,182 @@ footer h4 {
   font-size: 1.5em;
 }
 
-.grid {
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+#discount {
+  background-color: #F1f1f1;
+  position: sticky;
+  top: 0;
 }
 
-footer {
-  text-align: center;
+.discount {
+  padding: 10px;
+}
+
+.brand-name {
+  margin-left: 50px;
+}
+
+section.details {
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 100px;
+  width: 50%;
+  float: right;
+  font-family: "Inter", sans-serif !important;
+  text-align: left;
+}
+section.details h2.title {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+section.details small.price {
+  padding-top: 10px;
   display: block;
-  justify-self: end;
-  height: 100%;
-  color: #F0F0F0;
-  background-color: #222222;
 }
-footer img {
-  width: 10%;
+section.details div.reviews, section.details div.installment {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
 }
-footer #contact {
-  padding-left: 20px;
+section.details div.reviews small, section.details div.installment small {
+  margin: 4px 0;
 }
-footer #contact ul {
-  text-align: left;
+section.details img {
+  display: inline-block;
+  height: 25px;
+  width: auto;
+}
+section.details small {
+  display: inline;
+}
+section.details p.description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  width: 70%;
+}
+section.details ul.types {
+  overflow: paged-y;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
   list-style-type: none;
+  margin-top: 20px;
+  width: 70%;
 }
-footer #contact h3 {
+section.details ul.types li.type {
+  font-size: 0.7em;
+  grid-column: span 4;
+  display: inline-block;
+  padding: 20px 30px;
+  border: 1px solid grey;
+}
+section.details ul.types li.active {
+  border: 2px solid black;
+}
+section.details ul.types li.stock-out {
+  border: 1px solid lightgrey;
+  color: lightgrey;
+  text-decoration: line-through;
+}
+section.details small.shipping {
+  display: block;
+  color: grey;
   padding: 20px 0;
+  font-size: 0.8em;
+  font-style: italic;
+  width: 70%;
 }
-footer #contact h4 {
-  text-align: left;
+section.details button {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 auto;
+  padding: 15px 40px;
+  border: 0;
+  width: 70%;
+  background-color: black;
+}
+section.details hr {
+  border: 0;
+  background-color: #e3e3e3;
+  height: 1px;
+  margin: 25px 0;
+  width: 70%;
 }
 
 nav {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 20px 10px;
+  position: sticky;
+  top: 42px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }
-nav .nav {
-  width: 375px;
-  height: 400px;
-  display: none;
+nav .nav-links {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: 200px;
+  padding: 11px;
+  font-size: 0.7em;
 }
-nav .show {
-  display: contents;
-  background-color: #F0F0F0;
-}
-nav ul {
-  grid-column: 1/12;
-  line-height: 2;
-  display: grid;
-  padding-left: 30px;
+nav .actions {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  position: relative;
+  left: 50px;
+  margin-left: 200px;
+  padding: 5px;
 }
 nav li {
-  grid-column: 1/12;
-  list-style: none;
+  text-transform: uppercase;
 }
-nav li a {
-  float: left;
-  display: block;
-  color: #222222;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-nav li a:hover, nav li a .active {
-  text-decoration: underline;
-}
-@media screen and (max-width: 920px) {
-  nav li a:not(:first-child) {
-    display: none;
-  }
-}
-nav h1 {
-  grid-column: 2/10;
-}
-nav img {
-  margin: 15px 0;
-  grid-column: 11/12;
-  width: 80%;
-  cursor: pointer;
-}
-@media screen and (min-width: 920px) {
-  nav img {
-    display: none;
-  }
-}
-nav button {
-  margin: 0 auto;
-  grid-column: 2/4;
+nav .icon {
+  width: 1.5em;
+  height: auto;
 }
 
-@media screen and (min-width: 920px) {
-  nav {
-    display: inline;
-    position: sticky;
-    float: left;
-    top: 0;
-    left: 2%;
-    width: 25%;
-  }
-  nav ul {
-    margin-top: 40vh;
-    padding-left: 0;
-  }
-  nav .nav {
-    display: contents;
-  }
-  nav button {
-    margin: 0;
-  }
+.splide {
+  width: 50%;
+  height: auto;
 }
-.btn {
-  text-transform: uppercase;
-  height: 50px;
-  width: 200px;
-  border: 0;
-  color: #F0F0F0;
-  font-size: larger;
-  grid-column: 4/10;
-  cursor: pointer;
+.splide img {
+  width: 100%;
+  height: auto;
 }
-.btn:hover {
-  background-color: #222222;
+
+section.frequently-bought-with {
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+section.frequently-bought-with h3 {
+  margin-bottom: 30px;
+}
+section.frequently-bought-with ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+section.frequently-bought-with ul li img {
+  height: auto;
+  width: 100px;
+}
+section.frequently-bought-with ul li div.description {
+  padding: 35px 10px;
+  float: right;
+  font-size: 0.9em;
+}
+section.frequently-bought-with ul li div.description a:visited {
+  color: grey;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=main.css.map */

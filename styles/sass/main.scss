@@ -3,9 +3,15 @@
 @import "base/reset";
 @import "base/typography";
 
-@import "layout/grid";
-@import "layout/footer";
+@import "layout/discount";
+@import "layout/nav";
 
+@import "components/details";
 @import "components/nav";
-@import "components/button";
+@import "components/slider";
+@import "components/freq-bougth";
 
+main {
+  display: flex;
+  flex-direction: row;
+}

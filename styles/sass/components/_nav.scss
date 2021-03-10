@@ -1,82 +1,42 @@
 nav {
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  padding: 20px 10px;
+  position: sticky;
+  top: 42px;
 
-  .nav {
-    width: 375px;
-    height: 400px;
-    display: none;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    list-style-type: none;
+
+    margin-left: 200px;
+    padding: 11px;
+
+    font-size: 0.7em;
   }
-  .show {
-    display: contents;
-    background-color: $color__light;
+
+  .actions {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+
+    position: relative;
+    left: 50px;
+
+    margin-left: 200px;
+    padding: 5px;
   }
-  ul {
-    grid-column: 1/12;
-    line-height: 2;
-    display: grid;
-    padding-left: 30px;
-  }
+
   li {
-    grid-column: 1/12;
-    list-style: none;
-
-    a {
-      float: left;
-      display: block;
-      color: $color__darker;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-
-
-      &:hover, .active {
-        text-decoration: underline;
-      }
-
-      @media screen and (max-width: 920px) {
-        &:not(:first-child) {display: none;}
-      }
-    }
+    text-transform: uppercase;
   }
-  h1 {
-    grid-column: 2/10;
-  }
-  img {
-    margin: 15px 0;
-    grid-column: 11/12;
-    width: 80%;
-    cursor: pointer;
-    @media screen and (min-width: 920px){
-      display: none;
-    }
-  }
-  button {
-    margin: 0 auto;
-    grid-column: 2/4;
-  }
-}
 
-@media screen and (min-width: 920px) {
-  nav {
-    display: inline;
-    position: sticky;
-    float: left;
-    top: 0;
-    left: 2%;
-    width: 25%;
-
-    ul {
-      margin-top: 40vh;
-      padding-left: 0;
-    }
-    .nav {
-      display: contents;
-    }
-    button {
-      margin: 0;
-    }
+  .icon {
+    width: 1.5em;
+    height: auto;
   }
 }

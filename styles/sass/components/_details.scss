@@ -1,0 +1,107 @@
+section.details {
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 100px;
+  width: 50%;
+  float: right;
+
+  font-family: 'Inter', sans-serif !important;
+  text-align: left;
+
+  h2.title {
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  small.price {
+    padding-top: 10px;
+    display: block;
+  }
+
+  div.reviews, div.installment {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+
+    small {
+      margin: 4px 0;
+    }
+  }
+
+  img {
+    display: inline-block;
+    height: 25px;
+    width: auto;
+  }
+
+  small {
+    display: inline;
+  }
+
+  p.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    width: 70%;
+  }
+
+  ul.types {
+    overflow: paged-y;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+
+    list-style-type: none;
+
+    margin-top: 20px;
+
+    width: 70%;
+
+    li.type {
+      font-size: 0.7em;
+      grid-column: span 4;
+      display: inline-block;
+      padding: 20px 30px;
+      border: 1px solid grey;
+
+    }
+    li.active {
+      border: 2px solid black;
+    }
+    li.stock-out {
+      border: 1px solid lightgrey;
+      color: lightgrey;
+      text-decoration: line-through;
+    }
+  }
+
+  small.shipping {
+    display: block;
+    color: grey;
+    padding: 20px 0;
+    font-size: 0.8em;
+    font-style: italic;
+    width: 70%;
+  }
+
+  button {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: white;
+
+    margin: 0 auto;
+    padding: 15px 40px;
+
+    border: 0;
+    width: 70%;
+    background-color: black;
+  }
+
+  hr {
+    border: 0;
+    background-color: #e3e3e3;
+    height: 1px;
+    margin: 25px 0;
+    width: 70%
+  }
+}
